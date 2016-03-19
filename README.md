@@ -12,6 +12,7 @@ You will also need to install [OptiPNG](http://optipng.sourceforge.net/) and [jp
 
 ##### compress
 > Purpose
+
 To optimize an image in place making it as compact as possible while retaining dimenions. This will strip any exif information and automatically rotate/flip the image if required prior to removing exif meta data.
 
 > Accepts
@@ -25,6 +26,7 @@ _This method has no return value_
 ----
 ##### info
 > Purpose
+
 Obtain concise information about the image to make working with it easier.
 
 > Accepts 
@@ -49,6 +51,7 @@ Obtain concise information about the image to make working with it easier.
 
 ##### crop
 > Purpose
+
 This method is designed to crop an image intelligently and scale it so that it fits within the dimensions specified as `width` and `height`. It also provides a method to scale the image to ideal size and then crop at the center resulting in an image zoomed, with some clipping.
 
 > Accepts 
@@ -61,12 +64,14 @@ This method is designed to crop an image intelligently and scale it so that it f
 |clip|bool|If true, perform an intelligent scaling and then crop the image out of bounds keeping the center part with no borders|
 
 > Returns : string
+
 String result is the full local path and filename of the new image.
 
 ----
 
 ##### scale
 > Purpose
+
 This is a wrapper for `crop()` which will determine the ideal image crop/resize based on the `max` parameter passed being the largest you want any side to be. This will calculate the requisite dimensions and run the `crop()` method
 
 > Accepts 
@@ -78,12 +83,14 @@ This is a wrapper for `crop()` which will determine the ideal image crop/resize 
 |clip|bool|If true, perform an intelligent scaling and then crop the image out of bounds keeping the center part with no borders|
 
 > Returns : string
+
 String result is the full local path and filename of the new image.
 
 ----
 
 ##### scaleWidth
 > Purpose
+
 This is a wrapper for `crop()` which will determine the ideal image crop/resize based on the `max` parameter passed being the largest you want the width to be. This will calculate the requisite dimensions and run the `crop()` method
 
 > Accepts 
@@ -95,12 +102,14 @@ This is a wrapper for `crop()` which will determine the ideal image crop/resize 
 |clip|bool|If true, perform an intelligent scaling and then crop the image out of bounds keeping the center part with no borders|
 
 > Returns : string
+
 String result is the full local path and filename of the new image.
 
 ----
 
 ##### scaleHeight
 > Purpose
+
 This is a wrapper for `crop()` which will determine the ideal image crop/resize based on the `max` parameter passed being the largest you want the height be. This will calculate the requisite dimensions and run the `crop()` method
 
 > Accepts 
@@ -112,4 +121,5 @@ This is a wrapper for `crop()` which will determine the ideal image crop/resize 
 |clip|bool|If true, perform an intelligent scaling and then crop the image out of bounds keeping the center part with no borders|
 
 > Returns : string
+
 String result is the full local path and filename of the new image.
